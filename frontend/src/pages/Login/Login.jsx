@@ -3,8 +3,8 @@ import { useNavigate } from "react-router-dom";
 import axios from "./../../api/axios";
 import "./Login.css";
 import dashboardPreview from "../../../public/Images/dashboardPreview.png";
-import HiddenPass from "../../../public/Images/hiddenPass.png";
-import ShowPass from "../../../public/Images/showPass.png";
+import HiddenPass from "../../../public/Images/HiddenPass.png";
+import ShowPass from "../../../public/Images/ShowPass.png";
 
 const Login = () => {
   const [email, setEmail] = useState("");
