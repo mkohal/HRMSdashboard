@@ -1,11 +1,10 @@
-
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "./../../api/axios";
 import "./Register.css";
 import dashboardPreview from "../../Images/dashboardPreview.png";
-import HiddenPass from "../../Images/hiddenPass.png";
-import ShowPass from "../../Images/showPass.png";
+import HiddenPass from "../../../public/Images/HiddenPass.png";
+import ShowPass from "../../Images/Show`Pass";
 
 const Register = () => {
   const [fullName, setFullName] = useState("");
