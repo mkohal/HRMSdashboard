@@ -3,9 +3,9 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "./../../api/axios";
 import "./Login.css";
-import dashboardPreview from "./../../Images/dashboardPreview.png";
-import HiddenPass from "./../../Images/hiddenPass.png";
-import ShowPass from "./../../Images/showPass.png";
+import dashboardPreview from "../../Images/dashboardPreview.png";
+import HiddenPass from "../../Images/hiddenPass.png";
+import ShowPass from "../../Images/showPass.png";
 
 const Login = () => {
   const [email, setEmail] = useState("");
