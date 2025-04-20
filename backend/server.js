@@ -8,7 +8,20 @@ dotenv.config();
 
 const app = express();
 app.use(express.json());
-app.use(cors());
+const allowedOrigins = ["https://hrm-sdashboard.vercel.app"];
+
+const corsOptions = {
+  origin: function (origin, callback) {
+    if (!origin || allowedOrigins.includes(origin)) {
+      callback(null, true);
+    } else {
+      callback(new Error("Not allowed by CORS"));
+    }
+  },
+  credentials: true,
+};
+
+app.use(cors(corsOptions));
 const authRoutes = require("./routes/auth");
 const candidateRoutes = require("./routes/candidate");
 const leaveRoutes = require("./routes/leave");
