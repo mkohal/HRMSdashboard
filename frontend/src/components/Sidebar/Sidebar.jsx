@@ -1,12 +1,11 @@
-
 import React, { useState } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 import "./Sidebar.css";
-import Candidates from "./../../Images/Candidates.png";
-import Employees from "./../../Images/Employees.png";
-import Attendance from "./../../Images/Attendance.png";
-import Leaves from "./../../Images/Leaves.png";
-import Logout from "./../../Images/Logout.png";
+import Candidates from "./../../../public/Images/Candidates.png";
+import Employees from "./../../../public/Images/Employees.png";
+import Attendance from "./../../../public/Images/Attendance.png";
+import Leaves from "./../../../public/Images/Leaves.png";
+import Logout from "./../../../public/Images/Logout.png";
 
 const SidebarLayout = () => {
   const navigate = useNavigate();
@@ -85,4 +84,3 @@ const SidebarLayout = () => {
 };
 
 export default SidebarLayout;
-

@@ -1,10 +1,9 @@
-
 import React, { useEffect, useState } from "react";
 import api from "../../../api/axios";
 import "./Employees.css";
-import Mail from "./../../../Images/Mail.png";
-import Notifications from "./../../../Images/Notifications.png";
-import Profile from "./../../../Images/Profile.png";
+import Mail from "./../../../../public/Images/Mail.png";
+import Notifications from "./../../../../public/Images/Notifications.png";
+import Profile from "./../../../../public/Images/Profile.png";
 
 const Employee = () => {
   const [employees, setEmployees] = useState([]);

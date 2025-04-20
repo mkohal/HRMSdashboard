@@ -5,9 +5,9 @@ import LeaveTable from "./LeaveTable";
 import LeaveCalendar from "./LeaveCalendar";
 import api from "../../../api/axios";
 import "./Leaves.css";
-import Mail from "./../../../Images/Mail.png";
-import Notifications from "./../../../Images/Notifications.png";
-import Profile from "./../../../Images/Profile.png";
+import Mail from "./../../../../public/Images/Mail.png";
+import Notifications from "./../../../../public/Images/Notifications.png";
+import Profile from "./../../../../public/Images/Profile.png";
 
 const Leaves = () => {
   const [leaves, setLeaves] = useState([]);
