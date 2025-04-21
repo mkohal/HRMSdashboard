@@ -81,7 +81,11 @@ const Candidates = () => {
   const handleDownload = (id) => {
     const candidate = candidates.find((c) => c.id === id);
     if (candidate?.resumePath) {
-      window.open(`${VITE_API_BASE_URL}/${candidate.resumePath}`, "_blank");
+ window.open(
+   `${import.meta.env.VITE_API_BASE_URL}/${candidate.resumePath}`,
+   "_blank"
+ );
+
     } else {
       alert("No resume found");
     }
