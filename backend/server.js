@@ -8,7 +8,7 @@ dotenv.config();
 
 const app = express();
 app.use(express.json());
-const allowedOrigins = ["https://hrm-sdashboard.vercel.app"];
+const allowedOrigins = [process.env.FRONTEND_URL, "http://localhost:5173"];
 
 const corsOptions = {
   origin: function (origin, callback) {
